@@ -105,7 +105,7 @@
         <!--Explore-->
         <scene sceneID="n3y-bQ-YO8">
             <objects>
-                <viewController id="Y9S-mT-fhU" sceneMemberID="viewController">
+                <viewController id="Y9S-mT-fhU" customClass="TinderViewController" customModule="FoodTinder" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tvn-V0-3sd"/>
                         <viewControllerLayoutGuide type="bottom" id="zhp-6G-14Z"/>
@@ -117,15 +117,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLa-Go-9UY">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="My food" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-3m-AoP">
-                                        <rect key="frame" x="8" y="355" width="584" height="119"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="119" id="0lw-7n-MxS"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="gvm-WH-aQA">
                                         <rect key="frame" x="8" y="22" width="584" height="273"/>
                                         <constraints>
@@ -140,6 +131,9 @@
                                         <state key="normal" title="Button" image="Cross">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="reject:" destination="Y9S-mT-fhU" eventType="touchUpInside" id="2PW-T8-AFt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPn-5K-1gQ">
                                         <rect key="frame" x="513" y="303" width="44" height="33"/>
@@ -151,7 +145,19 @@
                                         <state key="normal" title="Button" image="Tick">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="like:" destination="Y9S-mT-fhU" eventType="touchUpInside" id="5AA-kO-JXg"/>
+                                        </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="My food" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-3m-AoP">
+                                        <rect key="frame" x="8" y="355" width="584" height="119"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="119" id="0lw-7n-MxS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
@@ -179,6 +185,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Explore" id="cD2-1N-EF5"/>
+                    <connections>
+                        <outlet property="imageShown" destination="gvm-WH-aQA" id="Uev-cy-Inn"/>
+                        <outlet property="textField" destination="DRh-3m-AoP" id="mmD-32-SJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vH1-3A-2bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
