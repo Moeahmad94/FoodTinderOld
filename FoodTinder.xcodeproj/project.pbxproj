@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DCA7DC41A6A3F2200850EAB /* ListViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA7DC31A6A3F2200850EAB /* ListViewController copy.swift */; };
+		1DCA7DC61A6A3F3000850EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA7DC51A6A3F3000850EAB /* Main.storyboard */; };
 		F1F077CE1A6A237700D0179D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077CD1A6A237700D0179D /* AppDelegate.swift */; };
 		F1F077D01A6A237700D0179D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077CF1A6A237700D0179D /* ViewController.swift */; };
-		F1F077D31A6A237700D0179D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F077D11A6A237700D0179D /* Main.storyboard */; };
 		F1F077D51A6A237700D0179D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F077D41A6A237700D0179D /* Images.xcassets */; };
 		F1F077D81A6A237700D0179D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F077D61A6A237700D0179D /* LaunchScreen.xib */; };
 		F1F077E41A6A237700D0179D /* FoodTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077E31A6A237700D0179D /* FoodTinderTests.swift */; };
@@ -27,11 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DCA7DC31A6A3F2200850EAB /* ListViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ListViewController copy.swift"; sourceTree = "<group>"; };
+		1DCA7DC51A6A3F3000850EAB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F1F077C81A6A237700D0179D /* FoodTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F077CC1A6A237700D0179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F077CD1A6A237700D0179D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F077CF1A6A237700D0179D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1F077D21A6A237700D0179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1F077D41A6A237700D0179D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F1F077D71A6A237700D0179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F1F077DD1A6A237700D0179D /* FoodTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +82,10 @@
 		F1F077CA1A6A237700D0179D /* FoodTinder */ = {
 			isa = PBXGroup;
 			children = (
+				1DCA7DC51A6A3F3000850EAB /* Main.storyboard */,
 				F1F077CD1A6A237700D0179D /* AppDelegate.swift */,
 				F1F077CF1A6A237700D0179D /* ViewController.swift */,
-				F1F077D11A6A237700D0179D /* Main.storyboard */,
+				1DCA7DC31A6A3F2200850EAB /* ListViewController copy.swift */,
 				F1F077D41A6A237700D0179D /* Images.xcassets */,
 				F1F077D61A6A237700D0179D /* LaunchScreen.xib */,
 				F1F077CB1A6A237700D0179D /* Supporting Files */,
@@ -165,6 +168,7 @@
 				TargetAttributes = {
 					F1F077C71A6A237700D0179D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2S3D8J8M3T;
 					};
 					F1F077DC1A6A237700D0179D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -196,7 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F077D31A6A237700D0179D /* Main.storyboard in Resources */,
+				1DCA7DC61A6A3F3000850EAB /* Main.storyboard in Resources */,
 				F1F077D81A6A237700D0179D /* LaunchScreen.xib in Resources */,
 				F1F077D51A6A237700D0179D /* Images.xcassets in Resources */,
 			);
@@ -218,6 +222,7 @@
 			files = (
 				F1F077D01A6A237700D0179D /* ViewController.swift in Sources */,
 				F1F077CE1A6A237700D0179D /* AppDelegate.swift in Sources */,
+				1DCA7DC41A6A3F2200850EAB /* ListViewController copy.swift in Sources */,
 				F1F077EE1A6A2AE000D0179D /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,14 +246,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1F077D11A6A237700D0179D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1F077D21A6A237700D0179D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1F077D61A6A237700D0179D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,6 +409,7 @@
 				F1F077E91A6A237700D0179D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1F077EA1A6A237700D0179D /* Build configuration list for PBXNativeTarget "FoodTinderTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +418,7 @@
 				F1F077EC1A6A237700D0179D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
