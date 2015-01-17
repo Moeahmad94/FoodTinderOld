@@ -16,6 +16,9 @@
 		F1F077D81A6A237700D0179D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1F077D61A6A237700D0179D /* LaunchScreen.xib */; };
 		F1F077E41A6A237700D0179D /* FoodTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077E31A6A237700D0179D /* FoodTinderTests.swift */; };
 		F1F077EE1A6A2AE000D0179D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077ED1A6A2AE000D0179D /* Restaurant.swift */; };
+		F1F077FC1A6A4B8600D0179D /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077F91A6A4B8600D0179D /* Food.swift */; };
+		F1F077FD1A6A4B8600D0179D /* newFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077FA1A6A4B8600D0179D /* newFood.swift */; };
+		F1F077FE1A6A4B8600D0179D /* newRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F077FB1A6A4B8600D0179D /* newRestaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		F1F077E21A6A237700D0179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1F077E31A6A237700D0179D /* FoodTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTinderTests.swift; sourceTree = "<group>"; };
 		F1F077ED1A6A2AE000D0179D /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		F1F077F91A6A4B8600D0179D /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F1F077FA1A6A4B8600D0179D /* newFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newFood.swift; sourceTree = "<group>"; };
+		F1F077FB1A6A4B8600D0179D /* newRestaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newRestaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,9 @@
 		F1F077CA1A6A237700D0179D /* FoodTinder */ = {
 			isa = PBXGroup;
 			children = (
+				F1F077F91A6A4B8600D0179D /* Food.swift */,
+				F1F077FA1A6A4B8600D0179D /* newFood.swift */,
+				F1F077FB1A6A4B8600D0179D /* newRestaurant.swift */,
 				1DCA7DC51A6A3F3000850EAB /* Main.storyboard */,
 				1DCA7DC71A6A411200850EAB /* TinderViewController.swift */,
 				F1F077CD1A6A237700D0179D /* AppDelegate.swift */,
@@ -224,11 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F077FD1A6A4B8600D0179D /* newFood.swift in Sources */,
+				F1F077FE1A6A4B8600D0179D /* newRestaurant.swift in Sources */,
 				F1F077D01A6A237700D0179D /* ViewController.swift in Sources */,
 				F1F077CE1A6A237700D0179D /* AppDelegate.swift in Sources */,
 				1DCA7DC81A6A411200850EAB /* TinderViewController.swift in Sources */,
 				1DCA7DC41A6A3F2200850EAB /* ListViewController.swift in Sources */,
 				F1F077EE1A6A2AE000D0179D /* Restaurant.swift in Sources */,
+				F1F077FC1A6A4B8600D0179D /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

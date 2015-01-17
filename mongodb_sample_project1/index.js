@@ -3,8 +3,7 @@ var http = require('http'),
     path = require('path'),
     MongoClient = require('mongodb').MongoClient,
     Server = require('mongodb').Server,
-    CollectionDriver = require('./collectionDriver').CollectionDriver,
-    FileDriver = require('./fileDriver').FileDriver;
+    CollectionDriver = require('./collectionDriver').CollectionDriver;
  
 var app = express();
 app.set('port', process.env.PORT || 3000); 
@@ -13,8 +12,7 @@ app.set('view engine', 'jade');
 app.use(express.bodyParser()); // <-- add
 
 var mongoHost = 'localHost'; //A
-var mongoPort = 27017;
-var fileDriver; 
+var mongoPort = 27017; 
 var collectionDriver;
  
 var mongoClient = new MongoClient(new Server(mongoHost, mongoPort)); //B
@@ -24,7 +22,6 @@ mongoClient.open(function(err, mongoClient) { //C
       process.exit(1); //D
   }
   var db = mongoClient.db("MyDatabase");  //E
-  fileDriver = new FileDriver(db);
   collectionDriver = new CollectionDriver(db); //F
 });
 
@@ -63,13 +60,6 @@ app.get('/:collection/:entity', function(req, res) { //I
    }
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', function (req, res) {
-  res.send('<html><body><h1>Hello World</h1></body></html>');
-});
- 
-app.post('/files', function(req,res) {fileDriver.handleUploadRequest(req,res);});
-app.get('/files/:id', function(req, res) {fileDriver.handleGet(req,res);});
 app.post('/:collection', function(req, res) { //A
     var object = req.body;
     var collection = req.params.collection;
