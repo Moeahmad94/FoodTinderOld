@@ -27,8 +27,33 @@ mongoClient.open(function(err, mongoClient) { //C
  
 app.use(express.static(path.join(__dirname, 'public')));
  
-app.get('/', function (req, res) {
-  res.send('<html><body><h1>Hello World</h1></body></html>');
+app.get('/:collection', function(req, res) { //A
+   var params = req.params; //B
+   collectionDriver.findAll(req.params.collection, function(error, objs) { //C
+    	  if (error) { res.send(400, error); } //D
+	      else { 
+	          if (req.accepts('html')) { //E
+    	          res.render('data',{objects: objs, collection: req.params.collection}); //F
+              } else {
+	          res.set('Content-Type','application/json'); //G
+                  res.send(200, objs); //H
+              }
+         }
+   	});
+});
+ 
+app.get('/:collection/:entity', function(req, res) { //I
+   var params = req.params;
+   var entity = params.entity;
+   var collection = params.collection;
+   if (entity) {
+       collectionDriver.get(collection, entity, function(error, objs) { //J
+          if (error) { res.send(400, error); }
+          else { res.send(200, objs); } //K
+       });
+   } else {
+      res.send(400, {error: 'bad url', url: req.url});
+   }
 });
  
 app.use(function (req,res) {
