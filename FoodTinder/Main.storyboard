@@ -38,7 +38,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="MyFood" id="Be0-nd-1qG">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="ifM-WO-Ye4"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="ifM-WO-Ye4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="YrT-X3-OTr"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QuQ-Fq-m9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vH1-3A-2bp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="774"/>
+            <point key="canvasLocation" x="1883" y="774"/>
         </scene>
         <!--Explore-->
         <scene sceneID="7Vu-iH-gm3">

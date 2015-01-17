@@ -14,7 +14,11 @@ class ListViewController: UITableViewController{
     //        ScavengerHuntItem(name: "Cat"),
     //        ScavengerHuntItem(name: "Bird"),
     //        ScavengerHuntItem(name:"Brick")]
-    
+	
+	override func viewDidLoad() {
+		
+		
+	}
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
